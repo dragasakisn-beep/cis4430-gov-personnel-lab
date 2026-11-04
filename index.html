@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>CIS 4430 | GOV Personnel Information Compliance Lab</title><link rel="stylesheet" href="styles.css?v=1.6.0"></head>
+<body>
+<header class="topbar">
+  <div class="bannerMain">
+    <div class="bannerSchool">
+      <span class="schoolTitle">KEISER UNIVERSITY</span>
+      <small>CIS 4430 &nbsp;·&nbsp; CONTRACTUAL / REGULATORY COMPLIANCE</small>
+      <span class="goldRibbon">GRC COMPLIANCE LAB</span>
+    </div>
+    <div class="bannerArt" aria-hidden="true">
+      <svg class="bannerPillar" viewBox="0 0 78 78"><path d="M10 22 39 7l29 15M16 27h46M20 33v27M32 33v27M46 33v27M58 33v27M15 62h48M9 68h60" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="bannerScales" viewBox="0 0 92 78"><path d="M46 10v56M17 66h58M28 16h36M46 10v-5M18 21h56M22 21 9 51h26L22 21ZM70 21 57 51h26L70 21Z" stroke="currentColor" stroke-width="3" fill="none" stroke-linejoin="round"/><path d="M9 52q13 11 26 0M57 52q13 11 26 0" stroke="currentColor" stroke-width="3" fill="none"/></svg>
+      <svg class="bannerShield" viewBox="0 0 86 94"><path d="M43 5 77 18v32c0 23-14 34-34 40C23 84 9 73 9 50V18Z" fill="rgba(18,116,207,.2)" stroke="currentColor" stroke-width="4"/><rect x="30" y="43" width="26" height="25" rx="3" fill="currentColor"/><path d="M35 44v-9a8 8 0 0 1 16 0v9" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="43" cy="54" r="3" fill="#082044"/></svg>
+      <svg class="bannerGlobe" viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" fill="none" stroke="currentColor" stroke-width="3"/><ellipse cx="40" cy="40" rx="15" ry="34" fill="none" stroke="currentColor" stroke-width="2"/><path d="M6 40h68M13 23h54M13 57h54" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+    </div>
+  </div>
+  <div class="bannerStatus"><span class="chip">SIMULATED CASE STUDY</span><span id="saveStatus">Not saved</span></div>
+</header>
+<main class="layout"><aside class="sidebar"><div class="sidebrand"><small>GRC FIELD LAB · V1.6</small><h2>Operation<br>Exposed Identity</h2><p>Investigate. Validate. Document. Report.</p></div><button type="button" class="mobileNavToggle" id="mobileNavToggle" aria-controls="nav" aria-expanded="false">☰ &nbsp; Browse the 10 lab sections <span aria-hidden="true">▾</span></button><nav id="nav" aria-label="Lab sections"></nav><div class="sidebottom"><b>Workflow progress</b><div class="progressbar"><div id="progressFill"></div></div><span id="progressText">0 of 10 sections reviewed</span><p>Private to this browser profile. Export a project backup to transfer devices.</p></div></aside>
+<section class="content"><div class="hero"><div><small>COMPLIANCE INVESTIGATION WORKBENCH</small><h1>GOV Personnel Information Exposure</h1><p>Source-grounded research, identity governance, regulatory applicability, third-party risk, audit evidence, and executive reporting.</p></div></div>
+<div class="notice"><strong>Case integrity:</strong> The DHS reporting is real; <strong>Federal Security Services Corporation (FSSC)</strong>, its 8,000-record incident, contracts and student findings are fictional. The alleged identity-system origin remains unverified. Do not enter real personnel information, credentials, or sensitive records.</div>
+<div class="actionToolbar" aria-label="Lab actions"><div class="primaryActions"><button id="openValidator" class="validatorButton">✓ Submission check <span id="readinessTiny">0/12</span></button><button id="printPdf" class="printAction">▣ Print / Save PDF</button><button id="exportPpt" class="accent">▣ Export PowerPoint</button></div><div class="secondaryActions"><button id="loadDemo" class="secondary">Load sample demo</button><button id="newWorkspace" class="secondary">New workspace</button><button id="openRubric" class="secondary">Instructor rubric</button><button id="exportProject" class="secondary">Export project backup</button><label class="filebutton secondary" for="importFile">Import backup<input id="importFile" type="file" accept="application/json,.json" hidden></label></div></div><p id="exportStatus" aria-live="polite" class="exportStatus">Required submission: print the completed report after all ten sections. PowerPoint is optional.</p>
+<div id="workspaceSummary" class="workspaceSummary"></div><div id="validationDashboard"></div><div id="panel"></div>
+<div class="panelFooter"><button id="prevBtn" class="secondary">← Previous</button><span id="stepCounter"></span><button id="nextBtn">Next section →</button></div>
+</section></main><div id="printArea" aria-label="Print-ready compliance report"></div>
+<script src="vendor/pptxgen.min.js?v=1.6.0"></script><script src="app.js?v=1.6.0"></script><script>
+(function(){const b=document.getElementById('mobileNavToggle'),n=document.getElementById('nav');if(!b||!n)return; b.addEventListener('click',()=>{const open=n.classList.toggle('mobileOpen');b.setAttribute('aria-expanded',String(open));b.querySelector('span').textContent=open?'▴':'▾';});n.addEventListener('click',e=>{if(e.target.closest('.navitem')&&window.matchMedia('(max-width:1000px)').matches){n.classList.remove('mobileOpen');b.setAttribute('aria-expanded','false');b.querySelector('span').textContent='▾';}});})();
+</script></body></html>
